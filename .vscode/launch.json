@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar programa C",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ARQUIVOS 2/teste",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/ARQUIVOS 2",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build lstgen"
+        }
+    ]
+}

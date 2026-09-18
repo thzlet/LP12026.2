@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build lstgen",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-std=c99",
+                "${workspaceFolder}/ARQUIVOS 2/LSTGEN.c",
+                "${workspaceFolder}/ARQUIVOS 2/teste.c",
+                "-o",
+                "${workspaceFolder}/ARQUIVOS 2/teste"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/ARQUIVOS 2"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
