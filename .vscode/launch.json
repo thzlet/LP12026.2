@@ -5,15 +5,15 @@
             "name": "Executar programa C",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/ARQUIVOS 2/teste",
+            "program": "${workspaceFolder}/ARVORES/arvores",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/ARQUIVOS 2",
+            "cwd": "${workspaceFolder}/ARVORES",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
-            "preLaunchTask": "build lstgen"
+            "preLaunchTask": "build arvores"
         }
     ]
 }

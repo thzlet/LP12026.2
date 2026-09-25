@@ -1,0 +1,31 @@
+#ifndef TAD_ARVORE_H
+#define TAD_ARVORE_H
+
+// em uma arvore generica, um nópode ter n filhos
+typedef struct no {
+    int valor;
+    struct no *filho;  // ponteiro  pro primeiro filho 
+    struct no *irmao;  // ponteiro pro próximo "irmão"
+} No;
+
+// os filhos de um nó viram uma lista ligada, onde cada nó aponta para o próximo irmão
+// o último aponta para NULL
+typedef No* Arvore;
+
+Arvore criarNo(int valor);
+Arvore inserirFilho(Arvore pai, int valor);
+
+Arvore buscarNo(Arvore raiz, int valor);
+int    contarNos(Arvore raiz);
+int    altura(Arvore raiz);
+int    grauArvore(Arvore raiz);
+int    isFolha(Arvore no);
+int    nivelDoNo(Arvore raiz, int valor, int nivelAtual);
+
+void imprimirPreOrdem(Arvore raiz, int profundidade);
+void listarFilhos(Arvore no);
+
+int  removerSubarvore(Arvore *raiz, int valor);
+void liberarArvore(Arvore *raiz);
+
+#endif
