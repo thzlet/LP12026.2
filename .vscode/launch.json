@@ -1,19 +1,38 @@
 {
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Executar programa C",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/ARVORES/arvores",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/ARVORES",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build arvores"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
         {
-            "name": "Executar programa C",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/ARVORES/arvores",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/ARVORES",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "preLaunchTask": "build arvores"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    }
+  ]
 }
